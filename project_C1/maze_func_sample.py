@@ -3,7 +3,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-plt.rcParams['font.family'] = 'MS Gothic'  # 또는 'Meiryo'로 변경 가능
+plt.rcParams['font.family'] = 'MS Gothic' 
 
 maze = [
     [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
