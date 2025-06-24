@@ -3,10 +3,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-# 폰트 설정 (일본어 깨짐 방지)
 plt.rcParams['font.family'] = 'MS Gothic'  # 또는 'Meiryo'로 변경 가능
 
-# 수정된 20x20 미로 배열 ('S': 시작, 'G': 골, 0: 길, 1: 벽)
 maze = [
     [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
     [1,'S',0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,1],
@@ -29,10 +27,9 @@ maze = [
     [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,'G',1]
 ]
 
-player_pos = [1, 1]  # 시작 위치
+player_pos = [1, 1]  
 rows, cols = len(maze), len(maze[0])
 
-# 미로 그리기 함수
 def draw_maze():
     color_map = {
         0: 1.0,
@@ -53,7 +50,7 @@ def draw_maze():
     ax.legend(loc='upper right')
     plt.draw()
 
-# 키 입력 처리 함수
+
 def on_key(event):
     dx, dy = 0, 0
     if event.key == "up": dx = -1
